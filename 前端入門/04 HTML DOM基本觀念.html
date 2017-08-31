@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>HTML DOM基本觀念</title>
+    <script type="text/javascript">
+        function Change() {
+            var spanObj = document.getElementById("keyword");
+            spanObj.innerHTML = "MDFK";
+            spanObj.style.color = "red";
+            spanObj.style.fontSize = "60px";
+            spanObj.style.fontWeight = "bold";
+        }
+    </script>
+
+</head>
+
+<body>
+    <div>Today is <span id="keyword">good</span> day!!</div>
+    <button onclick="Change();" ;>Change</button>
+</body>
+
+</html>

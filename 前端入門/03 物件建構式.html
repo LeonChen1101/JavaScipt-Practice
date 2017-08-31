@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>JavaScript</title>
+    <script type="text/javascript">
+        function Player(name, hp) {
+            this.name = name;
+            this.hp = hp;
+            this.fight = function () {
+                this.hp -= 20;
+            };
+            this.rest = function () {
+                this.hp += 5;
+            };
+            this.report = function () {
+                alert(this.name + "'s hp is " + this.hp);
+            };
+        }
+        var player1 = new Player("Leon", 100);
+        var player2 = new Player("Coffee", 100);
+        player1.fight();
+        player1.fight();
+        player1.rest();
+        player1.report();
+        player2.fight();
+        player2.report();
+    </script>
+
+</head>
+
+<body>
+</body>
+
+</html>

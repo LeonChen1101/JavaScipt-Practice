@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>事件處理</title>
+    <script type="text/javascript">
+        function jumpWindow() {
+            alert("Fuck Off");
+        }
+        function mouseover(element) {
+            element.style.fontSize = "60px";
+            element.style.color = "blue";
+        }
+        function mouseout(element) {
+            element.style.fontSize = "60px";
+            element.style.color = "black";
+        }
+    </script>
+
+</head>
+
+<body>
+    <button onclick="jumpWindow();">Cliced</button>
+    <p onmouseover="mouseover(this);" onmouseout="mouseout(this);">I want to sex with you</p>
+</body>
+
+</html>

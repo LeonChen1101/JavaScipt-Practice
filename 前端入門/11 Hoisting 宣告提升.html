@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Hoisting 宣告提升</title>
+    <script type="text/javascript">
+        /*
+            JavaScript引擎會把宣告變數、函式(不含初始值)提升
+        */
+        x = 10;
+        alert(x);
+        var x;
+        //10
+
+        alert(y);
+        var y = 20;
+        //undefined
+
+        test();//呼叫函式
+        function test() { //函式宣告
+            alert("hello");
+        }
+        //hello
+
+        test2();
+        var test2 = function(){
+             alert("hello");
+        };
+        //無反應
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
